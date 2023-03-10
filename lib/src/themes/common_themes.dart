@@ -402,6 +402,7 @@ ThemeData createYaruTheme({
 /// Helper function to create a new Yaru light theme
 ThemeData createYaruLightTheme({
   required Color primaryColor,
+  Color? dividerColor,
   Color? elevatedButtonColor,
   Color? elevatedButtonTextColor,
   bool? useMaterial3 = true,
@@ -438,7 +439,7 @@ ThemeData createYaruLightTheme({
   );
   return createYaruTheme(
     colorScheme: colorScheme,
-    dividerColor: kDividerColorLight,
+    dividerColor: dividerColor ?? kDividerColorLight,
     elevatedButtonColor: elevatedButtonColor,
     elevatedButtonTextColor: elevatedButtonTextColor,
     useMaterial3: useMaterial3,
@@ -448,6 +449,7 @@ ThemeData createYaruLightTheme({
 /// Helper function to create a new Yaru dark theme
 ThemeData createYaruDarkTheme({
   required Color primaryColor,
+  Color? dividerColor,
   Color? elevatedButtonColor,
   Color? elevatedButtonTextColor,
   bool? useMaterial3 = true,
@@ -486,7 +488,7 @@ ThemeData createYaruDarkTheme({
   );
   return createYaruTheme(
     colorScheme: colorScheme,
-    dividerColor: kDividerColorDark,
+    dividerColor: dividerColor ?? kDividerColorDark,
     elevatedButtonColor: elevatedButtonColor,
     elevatedButtonTextColor: elevatedButtonTextColor,
     useMaterial3: useMaterial3,

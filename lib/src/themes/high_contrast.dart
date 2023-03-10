@@ -3,10 +3,11 @@ import 'package:yaru/src/themes/common_themes.dart';
 
 final yaruHighContrastLight = createYaruLightTheme(
   primaryColor: Colors.black,
+  dividerColor: Colors.black,
 );
 
 final yaruHighContrastDark = createYaruDarkTheme(
   primaryColor: Colors.white,
-  highContrast: true,
+  dividerColor: Colors.white,
   elevatedButtonTextColor: Colors.black,
 );
